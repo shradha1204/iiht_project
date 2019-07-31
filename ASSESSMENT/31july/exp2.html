@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<script type="text/javascript" src="./hello.js"> </script>
+</head>
+<body>
+<input type="button" value="Click Me" onClick="sayHello()" /><br><br>
+
+<input type="button" value="Click here" onClick="add(2,3);" />
+
+<p onClick="console.log('printing on text')">press it</p>
+
+<ol>
+<li onClick="console.log('printinggg')">  presss</li>
+<li onClick="console.log('printtttinggg')">  pressttts</li>
+</ol>
+
+<ul>
+<li onClick="console.log('printinggg')">  presss</li>
+<li onClick="console.log('printtttinggg')">  pressttts</li>
+</ul>
+
+focus  &  Blur   <input type="text" onfocus="myFunction(this)" onblur="myFunction1(this)" /> 
+
+</body>
+</html>
+
+
+
+
+
+------------------------------
+
+
+
+hello.js
+function sayHello() {
+ alert("Hello World, this is from js file");
+}
+
+function add(a, b)
+{
+var c;
+c = a + b;
+console.log('Can u see this?');
+alert('The result is '+c);
+
+}
+
+
+
+
+
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+
+function myFunction1(y) {
+  y.style.background = "white";
+}
