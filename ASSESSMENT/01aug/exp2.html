@@ -1,0 +1,34 @@
+<html>
+<head>
+	<script type="text/javascript" src="./jquery-3.0.0.js">
+	</script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p ,table").css("background-color","yellow");
+			$("p table").css("background-color","yellow");   //doesn't work 
+			$("div table").css("background-color","yellow"); 
+		$("div").slideToggle();
+		});
+	});
+	</script>
+</head>
+<body>
+	<div>
+		<p>This is a paragraph.</p>
+		Shradha Agarwal<br>
+		Antara Mishra<br>
+		Sumit Sethi<br>
+		Niskita Poddar<br>
+		<table>
+			<tr>
+				<td>2222</td>
+				<td>222222</td>
+				<td>22222222</td>
+				<td>2222222222</td>
+			</tr>
+		</table>
+	</div>
+	<button>Toggle between slide up and slide down for a p element</button>
+</body>
+</html>

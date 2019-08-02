@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2>Using the XMLHttpRequest Object</h2>
+	<div id="demo">
+		<button type="button" onclick="loadXMLDoc()">Change Content</button>
+	</div>
+	<script>
+		function loadXMLDoc() {
+			var x = new XMLHttpRequest();
+			x.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				document.getElementById("demo").innerHTML =
+				this.responseText;
+			}
+		};
+		x.open("GET", "xmlhttp_info.txt", true);
+		x.send();
+	}
+	</script>
+</body>
+</html>
