@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Logged in Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/site.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+<div class="container-fluid nav-container">
+	<div class="row">
+		<div class="col-md-2">
+			<img src="logo.webp">
+		</div>
+		<div class="col-md-8">
+			<ul class="nav nav-pills nav-justified">
+			    <li class="nav-item">
+			    	<a class="nav-link active" data-toggle="pill" href="#mycourses">My Courses</a>
+			    </li>
+			    <li class="nav-item">
+			    	<a data-toggle="pill" href="#learnnew">Search Courses and Timings</a>
+			    </li>
+			    <li class="nav-item">
+			    	<a data-toggle="pill" href="#notification">Mentor Details</a>
+			    </li>
+			 </ul>
+		</div>
+		<div class="col-md-2">
+				<button type="submit" class="btn btn-danger btn-md logout">Log Out</button>
+		</div>
+	</div>
+</div>
+<div class="container-fluid login-container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="col-md-12 login-form-1 ">
+					<div class="tab-content">
+						<div id="mycourses" class="tab-pane fade in active">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Mentors</th>
+										<th>Technology</th>
+										<th>Progress</th>								
+										<th>Start Date</th>						
+									</tr>
+								</thead>
+								<tr>
+									<td>Subham</td>
+							        <td>Machine Learning</td>
+							        <td>25%</td>
+							        <td>24/09/2019</td>
+								</tr>
+								<tr>
+									<td>Sumit</td>
+							        <td>Artificial Learning</td>
+							        <td>45%</td>
+							        <td>12/04/2014</td>
+								</tr>
+								<tr>
+									<td>Shiva</td>
+							        <td>Spring</td>
+							        <td>75%</td>
+							        <td>17/04/2013</td>
+								</tr>
+							</table>
+						</div>
+						<div id="learnnew" class="tab-pane fade">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Technology</th>
+										<th>Timing</th>
+										<th>Mentor Name</th>
+										<th>Action</th>															
+									</tr>
+								</thead>
+								<tr>
+							        <td>Machine Learning</td>
+							        <td>Mon-Fri 7Am-2PM</td>
+							        <td>Kundan</td>
+							        <td>
+										<button type="submit" class="btn btn-primary btn-sm">Propose</button>
+									</td>							       
+								</tr>
+								<tr>
+							        <td>Artificial Learning</td>
+							        <td>Mon-Fri 11PM-6PM</td>
+							        <td>Smith</td>
+							        <td>
+										<button type="submit" class="btn btn-primary btn-sm">Propose</button>
+									</td>
+								</tr>
+								<tr>
+							        <td>Spring</td>
+							        <td>Tues-Sat 7AM-2PM</td>
+							        <td>Deevansh</td>
+							        <td>
+										<button type="submit" class="btn btn-primary btn-sm">Propose</button>
+									</td>
+								</tr>
+							</table>							
+						</div>
+						<div id="notification" class="tab-pane fade">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>User</th>
+										<th>Technology</th>
+										<th>Duration(in months)</th>
+										<th>Request Date</th>
+										<th>Status</th>						
+									</tr>
+								</thead>
+								<tr>
+									<td>Kundan</td>
+							        <td>Machine Learning</td>
+							        <td>5</td>
+							        <td>24/09/2019</td>
+							        <td>Pending</td>
+								</tr>
+								<tr>
+									<td>Smith</td>
+							        <td>Artificial Learning</td>
+							        <td>3</td>
+							        <td>12/04/2014</td>
+							        <td>Accepted</td>
+								</tr>
+								<tr>
+									<td>Deevansh</td>
+							        <td>Spring</td>
+							        <td>7</td>
+							        <td>17/04/2013</td>
+							        <td>Denying</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+</div>
+</body>
+</html>
