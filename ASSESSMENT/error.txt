@@ -1,0 +1,11 @@
+Description:
+
+Field employeeService in com.example.EmployeeCRUD.controller.EmployeeController required a bean of type 'com.example.EmployeeCRUD.service.EmployeeService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.EmployeeCRUD.service.EmployeeService' in your configuration.

@@ -1,0 +1,25 @@
+public int getMaxSalary()
+	{
+		
+		Employee e=emps.get(0);
+		int max=e.getSalary();
+		for(Employee emp:emps)
+		{
+			
+			if(emp.getSalary()>=max)
+			{
+				max=emp.getSalary();
+			}
+		}
+		return max;
+	}
+
+ @GetMapping(value="/getMaxSalary", headers="Accept=application/json")
+	 public int getMaxSalary() {	 
+		/* List<Employee> tasks=employeeService.getEmployee();
+		 *  */
+		 int salary=employeeService.getMaxSalary();
+		/* System.out.println("print the tasks: "+tasks); */
+	  return salary;
+	
+	 }
